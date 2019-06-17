@@ -56,7 +56,6 @@ p {
 
 /*The widths are in a percentage!*/
 header {
-	height: 110px;
 	border-bottom: 3px solid #77a466;
 	margin: 0 auto;
 	display: flex;
@@ -132,7 +131,6 @@ header nav ul li a{
 .section-one,
 .section-two,
 .section-three {
-	width: 33%;
 	height: auto;
 	border-top: 1px solid #eee;
 }
@@ -174,7 +172,6 @@ header nav ul li a{
 
 /*The widths are in a percentage!*/
 footer {
-	height: 50px;
 	border-top: 3px solid #eee;
 	margin: 0 auto;
 	text-align: center;
@@ -188,4 +185,16 @@ footer span {
 	text-transform: lowercase;
 	color: #77a466;
 	font-size: 0.875em;
+}
+
+@media all and (min-width: 768px) {
+	/*Tablet styles here*/
+
+
+}
+
+@media all and (min-width: 1200px) {
+	/*Desktop styles here*/
+
+
 }
