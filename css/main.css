@@ -58,17 +58,17 @@ p {
 
 /*The widths are in a percentage!*/
 header {
-	border-bottom: 3px solid #77a466;
 	margin: 0 auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-flow: row wrap;
+	flex-flow: column wrap;
 }
 
 header h1 {
 	margin: 0;
 	padding: 38px 0;
+		border-bottom: 3px solid #77a466;
 }
 
 header h1 span {
@@ -82,6 +82,10 @@ header nav {
 header nav ul {
 	margin: 0;
 	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column wrap;
 }
 
 header nav ul li {
