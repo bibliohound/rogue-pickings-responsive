@@ -71,6 +71,8 @@ header h1 {
 	margin: 0;
 	padding: 38px 0;
 	border-bottom: 3px solid #77a466;
+	width: 100%;
+	text-align: center;
 }
 
 header h1 span {
@@ -121,6 +123,7 @@ header nav ul li a{
 .main-image img {
 	width: 100%;
 	border-bottom: 3px solid #77a466;
+	border-top: 3px solid #77a466;
 }
 
 .main-title {
@@ -153,11 +156,6 @@ header nav ul li a{
 
 .section-one h4 {
 	padding: 10px 0;
-}
-
-.section-two {
-	border-left: 1px solid #eee;
-	border-right: 1px solid #eee;
 }
 
 .section-two h4,
@@ -208,11 +206,45 @@ footer span {
 @media all and (min-width: 768px) {
 	/*Tablet styles here*/
 
+.bottom-section {
+	width: 100%;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+	.section-one,
+  .section-two,
+  .section-three {
+		width: 30%;
+	}
+
+	.section-two {
+		border-left: 1px solid #eee;
+		border-right: 1px solid #eee;
+	}
 
 }
 
 @media all and (min-width: 1200px) {
 	/*Desktop styles here*/
 
+ header {
+	 flex-flow: row nowrap;
+ }
+
+  header h1 {
+		display: flex;
+		justify-content: flex-start;
+		align-self: flex-start;
+		width: 50%;
+		border-bottom: none;
+	}
+
+  header nav ul {
+	  width: 50%;
+	  justify-content: space-between;
+		flex-flow: row nowrap;
+		align-self: flex-end;
+}
 
 }
