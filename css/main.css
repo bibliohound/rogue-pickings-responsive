@@ -54,7 +54,6 @@ h4 {
 p {
 	font-size: 0.875em;
 	line-height: 21px;
-  padding: 0 30px;
 }
 
 /*The widths are in a percentage!*/
@@ -150,18 +149,11 @@ header nav ul li a{
 	width: 100%;
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-start;
 	flex-flow: column wrap;
 }
 
-.section-one h4 {
-	padding: 10px 0;
-}
 
-.section-two h4,
-.section-three h4 {
-	padding: 10px 30px;
-}
 
 .menu {
 	list-style: none;
@@ -206,6 +198,10 @@ footer span {
 @media all and (min-width: 768px) {
 	/*Tablet styles here*/
 
+p {
+	  padding: 0 30px;
+}
+
 .bottom-section {
 	width: 100%;
 	justify-content: flex-start;
@@ -221,6 +217,15 @@ footer span {
 	.section-two {
 		border-left: 1px solid #eee;
 		border-right: 1px solid #eee;
+	}
+
+	.section-one h4 {
+		padding: 10px 0;
+	}
+
+	.section-two h4,
+	.section-three h4 {
+		padding: 10px 30px;
 	}
 
 }
@@ -245,6 +250,10 @@ footer span {
 	  justify-content: space-between;
 		flex-flow: row nowrap;
 		align-self: flex-end;
+}
+
+header nav ul li {
+    padding: 20px;
 }
 
 }
